@@ -1,5 +1,7 @@
 package com.apenasnagelo.api_rest.Repository;
 
+import com.apenasnagelo.api_rest.Exceptions.BusinessException;
+import com.apenasnagelo.api_rest.Exceptions.RequiredFieldException;
 import com.apenasnagelo.api_rest.Model.User;
 import org.springframework.stereotype.Repository;
 
@@ -9,6 +11,10 @@ import java.util.List;
 @Repository
 public class UserRepository {
     public void save(User user) {
+        if(user.getLogin() == null)
+            throw new RequiredFieldException("login");
+        if(user.getPassword() == null)
+            throw new RequiredFieldException("password");
         if (user.getId() == null)
             System.out.println("SAVE: " + user);
         else
