@@ -1,6 +1,5 @@
-package com.apenasnagelo.api_rest.doc;
+package com.apenasnagelo.api_rest.Docs;
 
-import io.swagger.v3.core.model.ApiDescription;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import org.springframework.context.annotation.Bean;
