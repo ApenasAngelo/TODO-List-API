@@ -1,4 +1,4 @@
-package com.apenasnagelo.api_rest.Exceptions;
+package com.apenasnagelo.api_rest.Exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

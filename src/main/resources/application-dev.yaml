@@ -3,6 +3,7 @@ spring:
     url: jdbc:h2:mem:testdb
     username: sa
     password:
+    driver-class-name: org.h2.Driver
 
   jpa:
     show-sql: true
@@ -12,6 +13,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        transaction:
+          jpa:
+            platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
 
   h2:
     console:
@@ -19,4 +24,10 @@ spring:
       path: /h2-console
       settings:
         trace: false
-        web-allow-others: false
+        web-allow-others: true
+
+security:
+  config:
+    PREFIX: Bearer
+    KEY: r6kODarHUgW83kmFt2o1frRh1694CiL1H+RlGi4W3YLUBKWMfPoEHJNcuh0DPn287+h+UfkQdvFPG0oIQNYIvh3UI/Ld6Qol3fAWEGRHqSBgBLvZ/sw7gtqpV7vaZPmpVIH3NRcZ9RVMo8fi99t9jLE30lktJkB7eJ6tT91p92jq
+    EXPIRATION: 3600000

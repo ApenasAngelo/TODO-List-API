@@ -37,6 +37,8 @@ public class Task {
         this.completed = completed;
     }
 
+    public Task() {}
+
     public Integer getId() {
         return id;
     }

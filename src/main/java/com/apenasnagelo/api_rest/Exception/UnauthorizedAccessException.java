@@ -1,4 +1,4 @@
-package com.apenasnagelo.api_rest.Exceptions;
+package com.apenasnagelo.api_rest.Exception;
 
 public class UnauthorizedAccessException extends RuntimeException {
     public UnauthorizedAccessException(String message) {

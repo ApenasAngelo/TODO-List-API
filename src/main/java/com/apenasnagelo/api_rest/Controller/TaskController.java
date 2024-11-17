@@ -1,7 +1,7 @@
 package com.apenasnagelo.api_rest.Controller;
 
-import com.apenasnagelo.api_rest.Exceptions.TaskNotFoundException;
-import com.apenasnagelo.api_rest.Exceptions.UnauthorizedAccessException;
+import com.apenasnagelo.api_rest.Exception.TaskNotFoundException;
+import com.apenasnagelo.api_rest.Exception.UnauthorizedAccessException;
 import com.apenasnagelo.api_rest.Model.Task;
 import com.apenasnagelo.api_rest.Repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
